@@ -13,10 +13,12 @@ Built by **Ridwan Oyeniyi [[fullstack_overlord](https://github.com/fullstack-ove
 
 ## ✨ Key Features
 * **Multilingual Voice Support:** Talk to Sabi-Spend in English or your local dialect (Yoruba, Hausa, Igbo and Pidgin).
-* **Automated Bookkeeping:** Converts natural speech or text into structured accounting data.
-* **Cloud Persistence:** Data is synced to Hugging Face Datasets for 100% security and recovery.
-* **Scalability:** Built with a "Multi-Tenant" architecture; the app dynamically creates separate ledger files for every unique Business Name, allowing it to serve thousands of users simultaneously.
-* **Insightful Reports:** Uses Gemini 3.1 Flash-Lite to provide "Business Wisdom" and financial health analysis.
+* **Automated Bookkeeping:** Converts natural speech or text into structured accounting data instantl, removing the need for manual data entry.
+* **Official Statements & Insights:** Generates insightful financial health reports and professional statements of account tailored to the business's specific performance.
+* **Empathic AI Accountant (High Reasoning):** Powered by Gemini 3.1 Flash-Lite's "Thinking Mode." Sabi-Spend doesn't just calculate; it understands. It provides comfort during business setbacks and offers strategic, actionable advice for financial recovery.
+* **Interactive Financial Consulting:** Speak to Sabi-Spend as you would to a human accountant. Users can ask complex questions about their business health, profit trends, Business wisdom/advice, financial health analysis or expense management and receive deep, nuanced analysis.
+* **Cloud Persistence:** Data is synced to Hugging Face Datasets for 100% security and recovery, ensuring your records are never lost.
+* **Scalable Multi-Tenant Architecture:** Built with a "Multi-Tenant" architecture; the app dynamically creates and manages separate, private ledger files for every unique Business Name, allowing the system to serve thousands of SMEs simultaneously.
 
 ## 🚧 Other Features (Coming Soon)
 * **I-O-U Tracker (Debt Management):** Tracks who owes the business money and automated payment reminders. Allow users to record debts using an updated CSV structure with debtor_name and status (paid/debt).

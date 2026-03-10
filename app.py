@@ -160,13 +160,13 @@ def sabi_spend_accountant(text_input, audio_input, business_name):
         - Current Advice: {current_advice}
 
         YOUR TASK:
-        1. If the user wants to see their balance, profit, report or 'statement of account', explain the 'Current Report' in a friendly way.
-        2. If the user asks for advice or how the business is doing, use the 'Current Advice'.
+        1. If the user wants to see their balance, profit, report or 'statement of account', explain the 'Current Report' in a friendly, professional and explanatory way. DO NOT remove EMOJIS. DO NOT change the FORMAT and ORDER if the user asks for statement of account or official report but explain at the end of the report. If the user asks for only profit or balance, summarize the relevant sections of the 'Current Report' in an explanatory, clear and concise way.
+        2. If the user asks for financial advice or how the business is doing or financial health analysis, use the 'Current Advice'. DO NOT remove EMOJIS and explain in a friendly, professional and explanatory way.
         3. If the user mentions starting money, capital, adding capital, or 'investing' in the shop, extract it as:
            [{{"type": "capital", "item": "Starting Capital", "total": 500000}}]
         4. If the user is reporting a sale, purchase, or expense, extract the data into this JSON format:
            [{{"type": "purchase/sale/expense", "item": "name", "qty": 1, "unit_price": 1, "total": 1}}]
-        5. Always respond in the SAME language or dialect the user used (especially Pidgin).
+        5. ALWAYS respond in the SAME LANGUAGE or DIALECT the user used (especially Pidgin).
         6. If it's just a greeting like 'hello', 'hey', 'who are you', 'who built you', 'how far' or 'hi', respond warmly as a Smart AI Accounting, mention your name (Sabi-Spend) and who built you (Ridwan Oyeniyi (fullstack_overlord)).
 
         IMPORTANT: If you extract a transaction, ONLY return the JSON. No other text.
@@ -178,7 +178,16 @@ def sabi_spend_accountant(text_input, audio_input, business_name):
             with open(audio_input, "rb") as f:
                 contents.append(types.Part.from_bytes(data=f.read(), mime_type='audio/ogg'))
 
-        response = client.models.generate_content(model='gemini-3.1-flash-lite-preview', contents=contents)
+        response = client.models.generate_content(
+            model="gemini-3.1-flash-lite-preview",
+            contents=contents,
+            config=types.GenerateContentConfig(
+                thinking_config=types.ThinkingConfig(
+                    thinking_level="HIGH",
+                ),
+                temperature=0.5
+            )
+        )
         response_text = response.text.strip()
 
         # Check if the response is a JSON transaction
@@ -252,9 +261,10 @@ with gr.Blocks() as demo:
         interactive=True,
         placeholder="Type a message or tap the mic to speak...",
         show_label=False,
+        autofocus=True,
         sources=["microphone", "upload"],
         file_count="single",
-        file_types=["audio", "image"]
+        file_types=["audio", "image"],
     )
 
     # The submit button

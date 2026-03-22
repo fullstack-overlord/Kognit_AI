@@ -1,22 +1,22 @@
-# Sabi-Spend
-Smart AI-Powered Accounting Assistant for Nigerian SMEs.
+# Kognit AI
+Smart AI-Powered Accounting Assistant & Financial Intelligence AI for Nigerian SMEs.
 
 
-# 📊 Sabi-Spend: Your Smart AI-Powered Accounting Assistant
+# 📊 Kognit AI: Your Smart AI-Powered Accounting Assistant & Financial Intelligence AI
 
-**Sabi-Spend** is a high-performance, AI-powered accounting assistant designed to help Nigerian small business owners track sales and purchases, calculate profit and loss, give profitability advice and draft statement of account all in their own language—including English, Pidgin, Yoruba, Hausa, and Igbo.
+**Kognit AI** is a scalable, high-performance, AI-powered accounting assistant & Financial Intelligence AI designed to help Nigerian small business owners automate bookkeeping, track their inventory, manage debts and cash & credit accounts, track their finances (expenses/costs, sales, and profits), draft financial reports and accounting statements, draft time-based financial reports and summaries (daily, weekly and monthly reports), smart business insights (analytics + anomaly/trend detection), answer financial queries and offer personalized financial literacy coaching & interactive financial consulting, analyze profitability & financial health, and give real-time actionable insights & advice in a friendly, conversational way all in their own language—including English, Pidgin, Yoruba, Hausa, and Igbo.
 
 Built by **Ridwan Oyeniyi [[fullstack_overlord](https://github.com/fullstack-overlord)]** for the **3MTT Knowledge Showcase**.
 
 ## 🚀 Live Demo
-[[Get started with Sabi-Spend](https://huggingface.co/spaces/fullstack-overlord/Sabi-Spend)]
+[[Get started with Sabi-Spend](https://huggingface.co/spaces/fullstack-overlord/Kognit_AI)]
 
 ## ✨ Key Features
-* **Multilingual Voice Support:** Talk to Sabi-Spend in English or your local dialect (Yoruba, Hausa, Igbo and Pidgin).
+* **Multilingual Voice Support:** Talk to Kognit AI in English or your local dialect (Yoruba, Hausa, Igbo and Pidgin).
 * **Automated Bookkeeping:** Converts natural speech or text into structured accounting data instantl, removing the need for manual data entry.
 * **Official Statements & Insights:** Generates insightful financial health reports and professional statements of account tailored to the business's specific performance.
-* **Empathic AI Accountant (High Reasoning):** Powered by Gemini 3.1 Flash-Lite's "Thinking Mode." Sabi-Spend doesn't just calculate; it understands. It provides comfort during business setbacks and offers strategic, actionable advice for financial recovery.
-* **Interactive Financial Consulting:** Speak to Sabi-Spend as you would to a human accountant. Users can ask complex questions about their business health, profit trends, Business wisdom/advice, financial health analysis or expense management and receive deep, nuanced analysis.
+* **Empathic AI Accountant (High Reasoning):** Powered by Gemini 3.1 Flash-Lite's "Thinking Mode." Kognit AI doesn't just calculate; it understands. It provides comfort during business setbacks and offers strategic, actionable advice for financial recovery.
+* **Interactive Financial Consulting:** Speak to Kognit AI as you would to a human accountant. Users can ask complex questions about their business health, profit trends, Business wisdom/advice, financial health analysis or expense management and receive deep, nuanced analysis.
 * **Cloud Persistence:** Data is synced to Hugging Face Datasets for 100% security and recovery, ensuring your records are never lost.
 * **Scalable Multi-Tenant Architecture:** Built with a "Multi-Tenant" architecture; the app dynamically creates and manages separate, private ledger files for every unique Business Name, allowing the system to serve thousands of SMEs simultaneously.
 

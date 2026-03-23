@@ -2,3 +2,4 @@ google-genai
 gradio
 huggingface_hub
 python-dotenv
+pypdf
